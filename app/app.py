@@ -19,6 +19,7 @@ with st.form("predict"):
     parking = st.selectbox("Choose a parking:",["Bike","Car",'Bike and Car'])
     submitted = st.form_submit_button("Predict")
 
+
 if submitted:
     X = pd.DataFrame([{
         "locality": locality,
